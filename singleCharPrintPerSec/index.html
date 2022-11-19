@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Name</title>
+    <style>
+        input {
+            width: 300px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px;
+        }
+
+        #outputData>span {
+            padding: 3px;
+            border: 2px solid aqua;
+            margin: 5px;
+            background-color: #000;
+            color: #fff;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 4rem;
+            animation-name: letterAnimation;
+            animation-duration: 0.5s;
+            position: relative;
+        }
+
+        @keyframes letterAnimation {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+ 
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <input type="text" id="data">
+
+        <button onclick="mainFun()">Click to see magic</button>
+    </div>
+
+    <div id="outputData">
+       
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle</title>
+    <style>
+        #circle {
+            /* border: 2px solid #000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 100px;
+            border: 1px solid red;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            
+           
+        }
+        #circle:hover{
+            animation: circle 1s linear ;
+            animation-iteration-count: infinite;
+        }
+        @keyframes circle {
+            0%{
+                background: rgb(131, 58, 180);
+                border-radius: 100px;
+            }
+            25%{
+                background:rgba(253, 29, 29, 1) ;
+                border-radius: 200px;
+            }
+            50%{
+                background:rgba(253, 29, 29, 1) ;
+                border-radius: 300px;
+            }
+            75%{
+                background:rgba(252, 176, 69, 1) ;
+                border-radius: 400px;
+            }
+
+            100%{
+            
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            border-radius: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="circle">
+        <div class="button">click me</div>
+    </div>
+</body>
+
+</html>
